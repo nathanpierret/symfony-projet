@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "nav"
+                         "content"
+                         "footer";
+}
+
+h1
+{
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav
+{
+    grid-area: nav;
+    background-color: aquamarine;
+    border: blue solid 2px;
+}
+
+footer
+{
+
+}

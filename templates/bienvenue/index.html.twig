@@ -4,8 +4,8 @@
 
 {% block body %}
     {% if prenom is defined %}
-        <p>Bienvenue {{ prenom | capitalize }} dans le cours Symfony !</p>
+        <h1>Bienvenue {{ prenom | capitalize }} dans le cours Symfony !</h1>
          {% else %}
-             <p>Bienvenue dans le cours Symfony !</p>
+             <h1>Bienvenue dans le cours Symfony !</h1>
     {% endif %}
 {% endblock %}
