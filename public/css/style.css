@@ -30,10 +30,12 @@ nav
 {
     grid-area: nav;
     background-color: aquamarine;
-    border: blue solid 2px;
+    border: blue solid 1px;
 }
 
 footer
 {
-
+    grid-area: footer;
+    background-color: coral;
+    border: crimson solid 1px;
 }
