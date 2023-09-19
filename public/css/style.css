@@ -36,7 +36,11 @@ nav
 .content
 {
     grid-area: content;
-    margin-left: 10px;
+}
+
+.marge
+{
+    margin-left: 30px;
 }
 
 footer
