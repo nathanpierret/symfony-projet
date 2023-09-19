@@ -33,6 +33,12 @@ nav
     border: blue solid 1px;
 }
 
+.content
+{
+    grid-area: content;
+    margin-left: 10px;
+}
+
 footer
 {
     grid-area: footer;

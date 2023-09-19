@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails{% endblock %}
+
+{% block body %}
+    <h1>Détails de l'étudiant</h1>
+    {% if etudiant is defined %}
+    <ul>
+        <li>Prénom : {{ etudiant.prenom }}</li>
+        <li>Nom : {{ etudiant.nom }}</li>
+        <li>Email : {{ etudiant.email }}</li>
+        <li>Date de naissance : {{ etudiant.dateNaissance |date("d/m/Y") }}</li>
+        <li>Age : </li>
+    </ul>
+    {% endif %}
+{% endblock %}
