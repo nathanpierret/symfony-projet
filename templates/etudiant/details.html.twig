@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Détails{% endblock %}
+{% block title %}Détails de l'étudiant{% endblock %}
 
 {% block body %}
     <h1>Détails de l'étudiant</h1>
@@ -12,6 +12,8 @@
             <li>Email : {{ etudiant.email }}</li>
             <li>Date de naissance : {{ etudiant.dateNaissance |date("d/m/Y") }}</li>
             <li>Age : {{ etudiant.age }} ans</li>
+            <li>Promotion : {{ etudiant.promotion.nom }}</li>
+            <li>Année de la promotion : {{ etudiant.promotion.annee }}</li>
         </ul>
         {% endif %}
     </div>

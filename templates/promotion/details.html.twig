@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails de la promotion{% endblock %}
+
+{% block body %}
+    <h1>Détails de la promotion</h1>
+    <div class="marge">
+        {% if promotion is defined %}
+            <ul>
+                <li>Nom : {{ promotion.nom }}</li>
+                <li>Année : {{ promotion.annee }}</li>
+                <li>Nombre d'étudiants : {{ promotion.etudiants|length }}</li>
+            </ul>
+        {% endif %}
+    </div>
+    <h1>Liste des étudiants</h1>
+    <div class="marge">
+        <ul>
+
+        </ul>
+    </div>
+{% endblock %}
